@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Hanger Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+    }
+    
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #0f766e;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .contact-input {
+      transition: all 0.3s ease;
+    }
+
+    .contact-input:focus {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-lg shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="flex items-center space-x-3 group">
+          <i class="fas fa-store text-3xl text-teal-700 group-hover:scale-110 transition-transform"></i>
+          <span class="text-2xl font-bold text-teal-700 font-['Playfair_Display']">Hanger Store</span>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="/" class="nav-link text-gray-700 hover:text-teal-700 transition">Home</a>
+          <a href="/about.html" class="nav-link text-gray-700 hover:text-teal-700 transition">About</a>
+          <a href="/products.html" class="nav-link text-gray-700 hover:text-teal-700 transition">Products</a>
+          <a href="/contact.html" class="nav-link text-gray-700 hover:text-teal-700 transition">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 hover:bg-gray-100 rounded-full transition">
+            <i class="fas fa-search text-gray-600"></i>
+          </button>
+          <button class="md:hidden p-2 hover:bg-gray-100 rounded-full transition">
+            <i class="fas fa-bars text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">Get in Touch</h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <!-- Contact Information -->
+        <div data-aos="fade-right">
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact Information</h2>
+          <div class="space-y-8">
+            <div class="flex items-start space-x-6">
+              <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 group">
+                <i class="fas fa-location-dot text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Visit Us</h3>
+                <p class="text-gray-600">123 Hanger Street</p>
+                <p class="text-gray-600">New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-6">
+              <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 group">
+                <i class="fas fa-phone text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
+                <p class="text-gray-600">+1 (234) 567-8900</p>
+                <p class="text-gray-600">Mon-Fri: 9am - 6pm EST</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-6">
+              <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 group">
+                <i class="fas fa-envelope text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
+                <p class="text-gray-600">info@hangerstore.com</p>
+                <p class="text-gray-600">support@hangerstore.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-12">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition group">
+                <i class="fab fa-facebook-f text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </a>
+              <a href="#" class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition group">
+                <i class="fab fa-twitter text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </a>
+              <a href="#" class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition group">
+                <i class="fab fa-instagram text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </a>
+              <a href="#" class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition group">
+                <i class="fab fa-linkedin-in text-xl text-teal-700 group-hover:scale-125 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div data-aos="fade-left">
+          <form class="bg-white rounded-2xl shadow-xl p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="first_name">First Name</label>
+                <input type="text" id="first_name" class="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="last_name">Last Name</label>
+                <input type="text" id="last_name" class="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2" for="email">Email Address</label>
+              <input type="email" id="email" class="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+              <input type="text" id="subject" class="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+              <textarea id="message" rows="6" class="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-teal-700 text-white py-4 px-6 rounded-lg hover:bg-teal-800 transition-colors duration-300 flex items-center justify-center space-x-2 group">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="rounded-2xl overflow-hidden shadow-xl" data-aos="zoom-in">
+        <img src="/api/placeholder/1200/400" alt="Map" class="w-full h-96 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <i class="fas fa-store text-2xl"></i>
+            <span class="text-xl font-bold font-['Playfair_Display']">Hanger Store</span>
+          </div>
+          <p class="text-gray-300">Elevating wardrobes with premium storage solutions since 2020.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+          <div class="space-y-3">
+            <a href="/" class="block text-gray-300 hover:text-white transition">Home</a>
+            <a href="/about.html" class="block text-gray-300 hover:text-white transition">About</a>
+            <a href="/products.html" class="block text-gray-300 hover:text-white transition">Products</a>
+            <a href="/contact.html" class="block text-gray-300 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Contact</h4>
+          <div class="space-y-3">
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-location-dot mr-3"></i>
+              123 Hanger Street, NY
+            </p>
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-phone mr-3"></i>
+              +123 456 7890
+            </p>
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-envelope mr-3"></i>
+              info@hangerstore.com
+            </p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-facebook-f group-hover:scale-125 transition-transform"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-twitter group-hover:scale-125 transition-transform"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-instagram group-hover:scale-125 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-300">
+        <p>&copy; 2024 Hanger Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+</body>
+</html>

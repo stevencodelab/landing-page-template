@@ -1,13 +1,12 @@
-# 🎋 HangerStore - Landing Page Penjualan Hanger
+# 🎋 ElegantHanger - Landing Page Penjualan Hanger
 
-![Cuplikan layar 2025-01-08 114301](https://github.com/user-attachments/assets/2377a7bc-f141-4b2a-b5de-f0ab44e9c660)
-
+![HangerKu Banner](/assets/images/banner.png)
 
 > "Solusi Penyimpanan Pakaian Modern dan Elegan untuk Ruang Anda"
 
-## 📌 Tentang HangerStore
+## 📌 Tentang ElegantHanger
 
-HangerStore adalah landing page modern untuk bisnis penjualan hanger berkualitas tinggi. Dirancang dengan fokus pada pengalaman pengguna yang optimal dan konversi penjualan yang maksimal.
+ElegantHanger adalah landing page modern untuk bisnis penjualan hanger berkualitas tinggi. Dirancang dengan fokus pada pengalaman pengguna yang optimal dan konversi penjualan yang maksimal.
 
 ### ✨ Fitur Utama
 
@@ -23,7 +22,7 @@ HangerStore adalah landing page modern untuk bisnis penjualan hanger berkualitas
 - HTML5 & CSS3
 - JavaScript (ES6+)
 - Bootstrap 5
-- Tailwind CSS
+- SASS/SCSS
 - Font Awesome Icons
 - Google Fonts
 - AOS (Animate On Scroll)
@@ -52,30 +51,16 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE.md).
 
 ## 📞 Kontak
 
-- Website: [stevencodelab.github.io](https://stevencodelab.github.io)
-- Email: stevencodelab@gmail.com
-- Instagram: [@stevenmrsn](https://instagram.com/stevenmrsn)
-- WhatsApp: +62 823-2908-7585
+- Website: [www.hangerku.com](https://www.hangerku.com)
+- Email: info@hangerku.com
+- Instagram: [@hangerku](https://instagram.com/hangerku)
+- WhatsApp: +62 812-3456-7890
 
 ---
 
-### 🌟 Attachment
+### 🌟 Special Thanks
 
-![Cuplikan layar 2025-01-08 114301](https://github.com/user-attachments/assets/ee2be263-7e02-4cfe-a071-64b9030ecbe8)
-
-![Cuplikan layar 2025-01-08 114320](https://github.com/user-attachments/assets/d211bc4d-2eea-4ca3-a0be-7086393cc584)
-
-![Cuplikan layar 2025-01-08 114336](https://github.com/user-attachments/assets/9346b9b6-c01c-4d87-87c6-5010bc25e6ec)
-
-![Cuplikan layar 2025-01-08 114345](https://github.com/user-attachments/assets/23d3d200-232f-4a1b-9bbf-7c9cfd2a2e8a)
-
-![Cuplikan layar 2025-01-08 114356](https://github.com/user-attachments/assets/63aee36b-77ad-4d13-b0bd-96813ec93f70)
-
-
-
-
-
-
+Terima kasih kepada semua kontributor yang telah membantu mengembangkan landing page ini.
 
 ```txt
 Made with ❤️ by Stevencodelab

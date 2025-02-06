@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Hanger Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%);
+    }
+    
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #0f766e;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar (Same as index.html) -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-lg shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="/" class="flex items-center space-x-3 group">
+          <i class="fas fa-store text-3xl text-teal-700 group-hover:scale-110 transition-transform"></i>
+          <span class="text-2xl font-bold text-teal-700 font-['Playfair_Display']">Hanger Store</span>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="/" class="nav-link text-gray-700 hover:text-teal-700 transition">Home</a>
+          <a href="/about.html" class="nav-link text-gray-700 hover:text-teal-700 transition">About</a>
+          <a href="/products.html" class="nav-link text-gray-700 hover:text-teal-700 transition">Products</a>
+          <a href="/contact.html" class="nav-link text-gray-700 hover:text-teal-700 transition">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 hover:bg-gray-100 rounded-full transition">
+            <i class="fas fa-search text-gray-600"></i>
+          </button>
+          <button class="md:hidden p-2 hover:bg-gray-100 rounded-full transition">
+            <i class="fas fa-bars text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">Our Story</h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Founded with a passion for organization and style, Hanger Store has been transforming closets since 2020.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <img src="/api/placeholder/600/400" alt="Our Workshop" class="rounded-2xl shadow-xl">
+        </div>
+        <div data-aos="fade-left">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Crafting Excellence</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            At Hanger Store, we believe that every garment deserves the perfect home. Our journey began with a simple idea: to create hangers that not only store clothes but preserve them with care and elevate the entire closet experience.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Each hanger is meticulously crafted using sustainable materials and time-honored techniques, ensuring durability and elegance that lasts for generations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">Our Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-6">
+            <i class="fas fa-heart text-2xl text-teal-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Quality First</h3>
+          <p class="text-gray-600">We never compromise on quality, ensuring each product meets our exacting standards.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-6">
+            <i class="fas fa-earth-americas text-2xl text-teal-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Sustainability</h3>
+          <p class="text-gray-600">Environmental responsibility is at the core of everything we do.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-gray-50 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-6">
+            <i class="fas fa-handshake text-2xl text-teal-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Customer Focus</h3>
+          <p class="text-gray-600">Your satisfaction is our priority, and we're here to serve you better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">Meet Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative mb-6 mx-auto w-48 h-48 overflow-hidden rounded-full">
+            <img src="/api/placeholder/200/200" alt="Team Member" class="object-cover w-full h-full">
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">John Smith</h3>
+          <p class="text-teal-700 mb-4">Founder & CEO</p>
+          <p class="text-gray-600">Visionary leader with 15+ years in retail innovation.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative mb-6 mx-auto w-48 h-48 overflow-hidden rounded-full">
+            <img src="/api/placeholder/200/200" alt="Team Member" class="object-cover w-full h-full">
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Sarah Johnson</h3>
+          <p class="text-teal-700 mb-4">Head of Design</p>
+          <p class="text-gray-600">Creative mind behind our innovative product designs.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative mb-6 mx-auto w-48 h-48 overflow-hidden rounded-full">
+            <img src="/api/placeholder/200/200" alt="Team Member" class="object-cover w-full h-full">
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Michael Chen</h3>
+          <p class="text-teal-700 mb-4">Production Manager</p>
+          <p class="text-gray-600">Expert in sustainable manufacturing processes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Same as index.html) -->
+  <footer class="gradient-bg text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <i class="fas fa-store text-2xl"></i>
+            <span class="text-xl font-bold font-['Playfair_Display']">Hanger Store</span>
+          </div>
+          <p class="text-gray-300">Elevating wardrobes with premium storage solutions since 2020.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+          <div class="space-y-3">
+            <a href="/" class="block text-gray-300 hover:text-white transition">Home</a>
+            <a href="/about.html" class="block text-gray-300 hover:text-white transition">About</a>
+            <a href="/products.html" class="block text-gray-300 hover:text-white transition">Products</a>
+            <a href="/contact.html" class="block text-gray-300 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Contact</h4>
+          <div class="space-y-3">
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-location-dot mr-3"></i>
+              123 Hanger Street, NY
+            </p>
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-phone mr-3"></i>
+              +123 456 7890
+            </p>
+            <p class="flex items-center text-gray-300">
+              <i class="fas fa-envelope mr-3"></i>
+              info@hangerstore.com
+            </p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-facebook-f group-hover:scale-125 transition-transform"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-twitter group-hover:scale-125 transition-transform"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition group">
+              <i class="fab fa-instagram group-hover:scale-125 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-300">
+        <p>&copy; 2024 Hanger Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+</body>
+</html>
